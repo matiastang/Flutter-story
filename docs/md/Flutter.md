@@ -1,10 +1,12 @@
 # Flutter
 
 [Flutter中文社区](https://flutterchina.club/)
+[Flutter文档](https://flutter.cn/docs)
 
 ## Flutter for Web
 
 [Flutter for Web](https://flutterchina.club/web-analogs/)
+[Flutter 构建 Web 应用](https://flutter.cn/docs/get-started/web)
 
 ## Flutter fro RN
 
