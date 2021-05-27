@@ -2,7 +2,7 @@
  * @Author: tangdaoyong
  * @Date: 2021-05-18 18:06:27
  * @LastEditors: tangdaoyong
- * @LastEditTime: 2021-05-20 10:08:13
+ * @LastEditTime: 2021-05-27 10:18:05
  * @Description: Flutter安装
 -->
 <!-- TOC -->
@@ -17,6 +17,8 @@
         - [5. 运行 flutter doctor 命令](#5-运行-flutter-doctor-命令)
             - [5.1 配置Android环境](#51-配置android环境)
             - [5.2 更新CocoaPods](#52-更新cocoapods)
+    - [问题](#问题)
+        - [使用过程中发现：flutter pub get时比较慢](#使用过程中发现flutter-pub-get时比较慢)
 
 <!-- /TOC -->
 # Flutter安装
@@ -345,3 +347,28 @@ pod --version
 1.10.1
 ```
 如上更新 `CocoaPods` 成功。
+
+## 问题
+
+### 使用过程中发现：flutter pub get时比较慢
+
+参考[Community-run mirror sites](https://flutter.dev/community/china)，设置全局变量。
+
+1. `vim ~/.zshrc `
+2. 编辑并保持，如下替换为上海大学的源
+
+```
+# matiastang flutter
+
+# export PUB_HOSTED_URL=https://pub.flutter-io.cn
+# export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://mirrors.sjtug.sjtu.edu.cn/
+export PUB_HOSTED_URL=https://dart-pub.mirrors.sjtug.sjtu.edu.cn/
+```
+3. `source ~/.zshrc`
+
+效果很好，速度明显提升
+```
+$ flutter pub get
+Running "flutter pub get" in matias_flutter_helloworld...           8.4s
+```

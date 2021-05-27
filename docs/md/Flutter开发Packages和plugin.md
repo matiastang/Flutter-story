@@ -2,13 +2,14 @@
  * @Author: tangdaoyong
  * @Date: 2021-05-21 10:38:29
  * @LastEditors: tangdaoyong
- * @LastEditTime: 2021-05-21 10:44:17
+ * @LastEditTime: 2021-05-27 09:38:44
  * @Description: Flutter开发Packages和plugin
 -->
 # Flutter开发Packages和plugin
 
 [flutter 包搜索](https://pub.flutter-io.cn/packages)
 [flutter 插件官网](https://pub.dartlang.org)
+[使用 Flutter package](https://flutter.cn/docs/development/packages-and-plugins/using-packages)
 
 ## 介绍
 
@@ -19,6 +20,14 @@
 
 2. 一种是包（`Package`）。
 > `Package`就仅仅是`Dart`代码库。
+
+Package 和插件 (plugin) 有什么区别呢？ 插件 (plugin) 是 package 的一种，全称是 plugin package，我们简称为 plugin，中文叫插件。
+
+Packages
+Dart package 最低要求是包含一个 pubspec.yaml 文件。此外，一个 package 可以包含依赖关系 (在 pubspec.yaml 文件里声明)、 Dart 库、应用、资源、测试、图片和例子等。 pub.dev 上列出了很多 package，由 Google 工程师和 Flutter 和 Dart 社区的开发者开发和发布，你可以用在自己的应用里。
+
+Plugins
+插件 (plugin package) 是一种特别的 package，特别指那些帮助你获得原生平台特性的 package。插件可以为 Android (使用 Kotlin 或 Java 语言)、 iOS (使用 Swift 或 Objective-C 语言)、Web、macOS、Windows、Linux 平台，或其任意组合的平台编写。比如：某个插件可以为 Flutter 应用提供使用原生平台的摄像头的功能。
 
 ## Package及Plugin开发命令
 
